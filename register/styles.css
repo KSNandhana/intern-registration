@@ -1,0 +1,113 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/4046718/pexels-photo-4046718.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+/* Container styles */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: transparent; /* Transparent white background */
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Transparent border */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for border-color and background-color */
+}
+
+.container:hover {
+    border-color: rgba(0, 0, 0, 0.2); /* Darker transparent border color on hover */
+    background-color: transparent; /* Slightly darker transparent background color on hover */
+}
+
+
+/* Header styles */
+h2 {
+    text-align: center;
+    color: #5d5a5a;
+    margin-bottom: 20px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+/* Password visibility toggle styles */
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password i {
+    color: #999; /* Icon color */
+}
+
+.toggle-password:hover i {
+    color: #555; /* Icon color on hover */
+}
+
+input[type="password"] {
+    width: calc(100% - 30px); /* Adjust to accommodate the eye icon */
+    padding-right: 40px; /* Provide space for the eye icon */
+}
+
+/* Submit button styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(90, 22, 22);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(106, 10, 10);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
